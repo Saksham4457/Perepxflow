@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prepxflow | Enter the Flow State. Stay There.</title>
+    <meta name="description" content="Prepxflow is a flow-state productivity system for students and high performers. Deep work, structured planning, and distraction elimination.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <nav id="navbar">
+        <div class="container nav-content">
+            <div class="logo">PREPX<span class="gradient-text">FLOW</span></div>
+            <div class="nav-links" style="display: flex; gap: 1rem; align-items: center;">
+                <button id="theme-toggle-landing" class="btn" style="background: transparent; border: 1px solid var(--glass-border); color: var(--text-primary); padding: 8px 12px; display: flex; align-items: center; justify-content: center; cursor: pointer; border-radius: 8px; transition: var(--transition-smooth);">
+                    <i data-lucide="moon" id="theme-icon-landing" style="width: 18px; height: 18px;"></i>
+                </button>
+                <a href="#features" class="btn btn-secondary" style="padding: 8px 20px; font-size: 0.9rem;">Features</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container hero-content floating-3d">
+            <span class="section-tag reveal">Limited Early Access</span>
+            <h1 class="reveal">Prepxflow is <span class="gradient-text">Coming.</span></h1>
+            <p class="reveal">Join early. Build discipline before everyone else. Enter the elite flow state productivity system.</p>
+            
+            <div class="reveal">
+                <form class="waitlist-form hero-waitlist" id="hero-waitlist-form">
+                    <input type="email" placeholder="Enter your email" required id="hero-email">
+                    <button type="submit" class="btn btn-primary btn-pulse">Join Waitlist</button>
+                </form>
+                <div class="social-proof">
+                    <span class="pulse-dot"></span>
+                    <span id="waitlist-count">0</span> students already joined the movement
+                </div>
+                <p class="microcopy">No spam. Only high-value updates.</p>
+            </div>
+        </div>
+    </header>
+
+    <section id="problem" class="container">
+        <div style="text-align: center; max-width: 700px; margin: 0 auto;">
+            <span class="section-tag reveal">The Problem</span>
+            <h2 class="reveal" style="font-size: 2.5rem; margin-bottom: 1rem;">Most productivity systems fail because they rely on <span class="gradient-text">willpower</span>.</h2>
+            <p class="reveal">Consistency isn't about working harder. It's about having a system that eliminates friction.</p>
+        </div>
+        <div class="problem-grid">
+            <div class="glass-card reveal">
+                <i data-lucide="zap-off" style="color: var(--primary-neon); margin-bottom: 1rem;"></i>
+                <h3>Unfocused Effort</h3>
+                <p>You start strong, then lose focus after 30 minutes. Your brain isn't wired for chaos.</p>
+            </div>
+            <div class="glass-card reveal">
+                <i data-lucide="alert-triangle" style="color: var(--secondary-neon); margin-bottom: 1rem;"></i>
+                <h3>System Breakdown</h3>
+                <p>Simple to-do lists break the moment life gets busy. You need a system that adapts.</p>
+            </div>
+            <div class="glass-card reveal">
+                <i data-lucide="trending-down" style="color: #ff4757; margin-bottom: 1rem;"></i>
+                <h3>Busy, Not Productive</h3>
+                <p>Checking off minor tasks while the big goals remain untouched. That's not progress.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="solution" style="position: relative; overflow: hidden; text-align: center;">
+        <div class="container" style="max-width: 800px;">
+            <span class="section-tag reveal">The Solution</span>
+            <h2 class="reveal" style="font-size: 3rem; margin-bottom: 1.5rem;">A structured system built for <span class="gradient-text">Execution.</span></h2>
+            <p class="reveal" style="font-size: 1.2rem; margin-bottom: 2rem;">Prepxflow isn't just an app; it's a discipline engine. We combine deep work methodology with smart scheduling to ensure you're always working on what matters most.</p>
+            <ul style="list-style: none; display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem;" class="reveal">
+                <li style="display: flex; align-items: center; gap: 0.5rem;"><i data-lucide="check-circle" style="color: var(--primary-neon);"></i> Frictionless daily planning</li>
+                <li style="display: flex; align-items: center; gap: 0.5rem;"><i data-lucide="check-circle" style="color: var(--primary-neon);"></i> Hardcore focus enforcement</li>
+                <li style="display: flex; align-items: center; gap: 0.5rem;"><i data-lucide="check-circle" style="color: var(--primary-neon);"></i> Real-time performance metrics</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="features" class="container">
+        <div style="text-align: center; margin-bottom: 4rem;">
+            <span class="section-tag reveal">Features</span>
+            <h2 class="reveal" style="font-size: 2.5rem;">Built for the <span class="gradient-text">1%.</span></h2>
+        </div>
+        <div class="features-grid">
+            <div class="glass-card reveal floating-3d">
+                <div class="feature-icon"><i data-lucide="timer"></i></div>
+                <h3>Deep Work Sessions</h3>
+                <p>Timed blocks optimized for cognitive endurance. Enter the zone and stay there.</p>
+            </div>
+            <div class="glass-card reveal">
+                <div class="feature-icon"><i data-lucide="calendar"></i></div>
+                <h3>Smart Scheduling</h3>
+                <p>Our algorithm balances your workload based on exam dates and energy levels.</p>
+            </div>
+            <div class="glass-card reveal floating-3d">
+                <div class="feature-icon"><i data-lucide="activity"></i></div>
+                <h3>Habit Tracking</h3>
+                <p>Visual streaks and momentum indicators to keep your discipline unbreakable.</p>
+            </div>
+            <div class="glass-card reveal">
+                <div class="feature-icon"><i data-lucide="eye-off"></i></div>
+                <h3>Focus Mode</h3>
+                <p>Zero-distraction UI that locks you into your current task until it's finished.</p>
+            </div>
+            <div class="glass-card reveal floating-3d">
+                <div class="feature-icon"><i data-lucide="bar-chart-3"></i></div>
+                <h3>Progress Analytics</h3>
+                <p>Data-driven insights into your study patterns and peak performance hours.</p>
+            </div>
+            <div class="glass-card reveal">
+                <div class="feature-icon"><i data-lucide="target"></i></div>
+                <h3>Goal Alignment</h3>
+                <p>Connect daily tasks to your long-term ambitions (NDA, JEE, UPSC, etc.)</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="container" id="testimonials">
+        <div style="text-align: center; margin-bottom: 4rem;">
+            <span class="section-tag reveal">Social Proof</span>
+            <h2 class="reveal" style="font-size: 2.5rem;">Trusted by <span class="gradient-text">High Achievers.</span></h2>
+        </div>
+        <div class="testimonials-grid">
+            <div class="glass-card reveal testimonial-card">
+                <p style="font-style: italic; margin-bottom: 1rem; color: var(--text-primary);">"Prepxflow changed my JEE prep. I went from 4 hours of distracted study to 8 hours of pure flow. It's not a choice anymore, it's a routine."</p>
+                <div style="display: flex; align-items: center; gap: 1rem;">
+                    <div style="width: 40px; height: 40px; background: #333; border-radius: 50%;"></div>
+                    <div>
+                        <strong>Aryan S.</strong><br>
+                        <small>JEE Aspirant</small>
+                    </div>
+                </div>
+            </div>
+            <div class="glass-card reveal testimonial-card">
+                <p style="font-style: italic; margin-bottom: 1rem; color: var(--text-primary);">"The Focus Mode is a game-changer for UPSC. It's the only app that actually helps me stay disciplined instead of just tracking my failure."</p>
+                <div style="display: flex; align-items: center; gap: 1rem;">
+                    <div style="width: 40px; height: 40px; background: #333; border-radius: 50%;"></div>
+                    <div>
+                        <strong>Priyanka M.</strong><br>
+                        <small>UPSC Candidate</small>
+                    </div>
+                </div>
+            </div>
+            <div class="glass-card reveal testimonial-card">
+                <p style="font-style: italic; margin-bottom: 1rem; color: var(--text-primary);">"I used to struggle with consistency. Now, I just follow the Prepxflow system. It removes the decision-making and lets me focus on the work."</p>
+                <div style="display: flex; align-items: center; gap: 1rem;">
+                    <div style="width: 40px; height: 40px; background: #333; border-radius: 50%;"></div>
+                    <div>
+                        <strong>Rahul K.</strong><br>
+                        <small>CUET Student</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="signup" style="text-align: center; padding: 120px 0;">
+        <div class="container reveal">
+            <h2 style="font-size: 3.5rem; margin-bottom: 1.5rem;">Secure Your <span class="gradient-text">Early Slot.</span></h2>
+            <p style="font-size: 1.3rem; max-width: 600px; margin: 0 auto 2.5rem;">Join the elite group of students waiting for Prepxflow. Discipline isn't a gift; it's a system.</p>
+            
+            <form class="waitlist-form" style="margin: 0 auto;">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit" class="btn btn-primary btn-pulse">Join Waitlist</button>
+            </form>
+            
+            <p style="margin-top: 1.5rem; font-size: 0.9rem; opacity: 0.6;">No spam. Only high-value progress updates.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="logo">PREPX<span class="gradient-text">FLOW</span></div>
+            <div class="footer-links">
+                <a href="#">About</a>
+                <a href="#">Features</a>
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="#">Contact</a>
+            </div>
+            <p style="font-size: 0.9rem;">&copy; 2026 Prepxflow — Discipline Meets Flow.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="background3d.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

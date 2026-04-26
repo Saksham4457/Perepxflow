@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prepxflow Platform | Execute Without Distraction</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../shared/main.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    animation: {
+                        'fade-in': 'fadeIn 0.8s ease-out forwards',
+                        'glow': 'glow 3s infinite alternate',
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        },
+                        glow: {
+                            '0%': { boxShadow: '0 0 5px rgba(0, 242, 255, 0.2)' },
+                            '100%': { boxShadow: '0 0 20px rgba(0, 242, 255, 0.4)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <!-- Flow Mode Overlay -->
+    <div id="flow-overlay">
+        <span class="section-tag">IN FLOW STATE</span>
+        <div class="timer-display" id="timer">50:00</div>
+        <p style="margin-bottom: 2rem; color: var(--text-dim);">No distractions allowed. Your session is active.</p>
+        <button class="btn btn-secondary" onclick="app.exitFlow()">Exit Flow (Penalty Applied)</button>
+    </div>
+
+    <div id="app">
+        <!-- Sidebar Navigation -->
+        <aside id="sidebar" class="hidden">
+            <div class="logo" style="font-size: 1.5rem; font-weight: 800; margin-bottom: 2rem;">
+                PREPX<span class="gradient-text">FLOW</span>
+            </div>
+            <nav>
+                <a class="nav-item active" onclick="app.navigate('dashboard')">
+                    <i data-lucide="layout-dashboard"></i> Dashboard
+                </a>
+                <a class="nav-item" onclick="app.navigate('buddy')">
+                    <i data-lucide="users"></i> Study Buddy
+                </a>
+                <a class="nav-item" onclick="app.navigate('challenges')">
+                    <i data-lucide="award"></i> Challenges
+                </a>
+                <a class="nav-item" onclick="app.navigate('community')">
+                    <i data-lucide="globe"></i> Community
+                </a>
+                <a class="nav-item" onclick="app.navigate('analytics')">
+                    <i data-lucide="bar-chart-3"></i> Analytics
+                </a>
+                <a class="nav-item" onclick="app.navigate('problems')">
+                    <i data-lucide="help-circle"></i> Problems
+                </a>
+                <a class="nav-item" onclick="app.navigate('profile')">
+                    <i data-lucide="user"></i> Profile
+                </a>
+            </nav>
+            <div class="theme-toggle" onclick="app.toggleTheme()">
+                <div style="display: flex; align-items: center; gap: 10px;">
+                    <i data-lucide="moon" id="theme-icon"></i>
+                    <span style="font-size: 0.9rem;">Theme</span>
+                </div>
+            </div>
+
+            <div style="margin-top: 1.5rem;">
+                <div class="card glass-panel" style="padding: 1rem;">
+                    <div style="display: flex; align-items: center; gap: 10px;">
+                        <div style="width: 32px; height: 32px; background: var(--accent-gradient); border-radius: 50%;"></div>
+                        <div>
+                            <div style="font-size: 0.9rem; font-weight: 600;" id="user-name-display">Student</div>
+                            <div style="font-size: 0.7rem; color: var(--text-dim);" id="user-level-display">Level 1</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main id="main-view-container">
+            <div class="menu-bar">
+                <div class="menu-trigger" onclick="app.toggleSidebar()">
+                    <i data-lucide="menu"></i>
+                </div>
+            </div>
+            <div id="main-view">
+                <!-- Content will be injected here -->
+            </div>
+        </main>
+    </div>
+
+    <!-- App Engine -->
+    <script src="../shared/store.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
